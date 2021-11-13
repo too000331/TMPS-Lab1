@@ -1,27 +1,29 @@
 package com;
 
-import com.Factory.BaseFactory;
-import com.Factory.ArtDecoFurnitureFactory;
-import com.Factory.CyberPunkFurnitureFactory;
-import com.Factory.ModerFurnitureFactory;
+import com.Factory.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        BaseFactory cyberPunkFactory = CyberPunkFurnitureFactory.getCyberPunkFurnitureFactoryFactory();
-        System.out.println(cyberPunkFactory.createFurniture("chair").toString());
-        System.out.println(cyberPunkFactory.createFurniture("sofa").toString());
-        System.out.println(cyberPunkFactory.createFurniture("table").toString());
+        BaseFactory fordFactory = FordFactory.getFordFactory();
+        System.out.println(fordFactory.createCars("sedan").toString());
+        System.out.println(fordFactory.createCars("pickup truck").toString());
+        System.out.println(fordFactory.createCars("minivan").toString());
 
-        BaseFactory artDecoFactory = ArtDecoFurnitureFactory.getArtDecoFurnitureFactory();
-        System.out.println(artDecoFactory.createFurniture("chair").toString());
-        System.out.println(artDecoFactory.createFurniture("sofa").toString());
-        System.out.println(artDecoFactory.createFurniture("table").toString());
+        BaseFactory mercedesFactory = MercedesFactory.getMercedesFactory();
+        System.out.println(mercedesFactory.createCars("sedan").toString());
+        System.out.println(mercedesFactory.createCars("pickup truck").toString());
+        System.out.println(mercedesFactory.createCars("minivan").toString());
 
-        BaseFactory moderFactory = ModerFurnitureFactory.getModerFurnitureFactory();
-        System.out.println(moderFactory.createFurniture("chair").toString());
-        System.out.println(moderFactory.createFurniture("sofa").toString());
-        System.out.println(moderFactory.createFurniture("table").toString());
+        BaseFactory toyotaFactory = ToyotaFactory.getToyotaFactory();
+        System.out.println(toyotaFactory.createCars("sedan").toString());
+        System.out.println(toyotaFactory.createCars("pickup truck").toString());
+        System.out.println(toyotaFactory.createCars("minivan").toString());
+
+        BaseFactory volkswagenFactory = VolkswagenFactory.getVolkswagenFactory();
+        System.out.println(volkswagenFactory.createCars("sedan").toString());
+        System.out.println(volkswagenFactory.createCars("pickup truck").toString());
+        System.out.println(volkswagenFactory.createCars("minivan").toString());
 
     }
 }

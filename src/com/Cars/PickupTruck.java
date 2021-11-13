@@ -1,8 +1,8 @@
-package com.Furniture;
+package com.Cars;
 
-public class Table implements Furniture{
+public class PickupTruck implements Cars {
     private String name;
-    private String style;
+    private String brand;
     private float price;
 
     @Override
@@ -11,8 +11,8 @@ public class Table implements Furniture{
     }
 
     @Override
-    public void setStyle(String style) {
-        this.style = style;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     @Override
@@ -22,10 +22,9 @@ public class Table implements Furniture{
 
     @Override
     public String toString() {
-        return "Table { " +
+        return "PickupTruck: " +
                 "name='" + name + '\'' +
-                ", style='" + style + '\'' +
-                ", price=" + price + "$ " +
-                '}';
+                ", brand='" + brand + '\'' +
+                ", price=" + price + "€;";
     }
 }

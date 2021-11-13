@@ -1,16 +1,16 @@
-package com.Furniture;
+package com.Cars;
 
-public class Chair implements Furniture {
+public class Sedan implements Cars {
     private String name;
-    private String style;
+    private String brand;
     private float price;
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setStyle(String style) {
-        this.style = style;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     public void setPrice(float price) {
@@ -19,10 +19,9 @@ public class Chair implements Furniture {
 
     @Override
     public String toString() {
-        return "Chair { " +
+        return "Sedan: " +
                 "name='" + name + '\'' +
-                ", style='" + style + '\'' +
-                ", price=" + price + "$ " +
-                '}';
+                ", brand='" + brand + '\'' +
+                ", price=" + price + "€;";
     }
 }
